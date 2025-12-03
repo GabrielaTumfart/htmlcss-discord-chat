@@ -17,8 +17,86 @@
 
     /* Spazi */
     --chatapp-bottom-height: 80px;
-
 }
+
+/* Body */
+
+Body {
+    background-color: var(--body-background-color);
+    color: var(--primary-text-color);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Utilities */
+
+.debug, .debug > * {
+    border: 3px dashed red;
+    padding: 6px;
+    min-height: 30px;
+}
+
+/* Layout */
+
+.chatapp-wrapper {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.chatapp-wrapper > .chatapp-upper {
+    height: calc(100vh var(--chatapp-bottom-height));
+    display: flex;
+}
+
+.chatapp-wrapper > .chatapp-upper > .chatapp-sidebar {
+    width: 80px;
+    flex-shrink: 0;
+    overflow: auto;
+}
+
+.chatapp-wrapper > .chatapp-upper > .chatapp-main {
+    flex-grow: 1;
+    overflow: auto;
+    background-color: var(--main-background-color);
+    border-top-left-radius: 2rem;
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.chatapp-wrapper > .chatapp-bottom {
+    height: var(--chatapp-bottom-height);
+    background-color: var(--footer-background-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
