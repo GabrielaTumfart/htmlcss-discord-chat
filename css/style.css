@@ -90,7 +90,8 @@ a {
     position: relative;
 }
 
-.server-item.server-active::before .server-item:hover::before {
+/* .server-item.server-active::before .server-item:hover::before  */
+.server-item.server-item:hover::before {
     content: "";
     height: 100%;
     width: 4px;
@@ -135,8 +136,34 @@ a {
 }
 
 .user-profile-pic {
-    width: 60px;
+    width: 40px;
     flex-shrink: 0;
+    position: relative;
+}
+
+.user-profile-pic::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 5px solid var(--main-background-color)
+}
+
+/* Status online, offline, assente */
+
+.status-active .user-profile-pic::after {
+    background-color: var(--status-active-color);
+}
+
+.status-away .user-profile-pic::after {
+    background-color: var(--status-away-color);
+}
+
+.status-offline .user-profile-pic-img::after {
+    background-color: var(--status-offline-color);
 }
 
 .user-profile-pic > .user-profile-pic-img {
