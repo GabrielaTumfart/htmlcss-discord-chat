@@ -2,4 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+} 
+
+/* Colori */
+:root {
+    --status-active-color: #2faa5c;
+    --status-away-color: #efa918;
+    --status-offline-color: #f64146;
+    --primary-text-color: #fff9f8;
+    --body-background-color: #141318;
+    --main-background-color: #1c1d21;
+    --footer-background-color:#2c2d33;
+    --muted-text-color: #fff9f8;
+
+    /* Spazi */
+    --chatapp-bottom-height: 80px;
+
 }
+
+
+
