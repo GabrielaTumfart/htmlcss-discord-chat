@@ -90,8 +90,7 @@ a {
     position: relative;
 }
 
-/* .server-item.server-active::before .server-item:hover::before  */
-.server-item.server-item:hover::before {
+.server-item.server-active::before, .server-item:hover::before {
     content: "";
     height: 100%;
     width: 4px;
@@ -101,6 +100,11 @@ a {
     left: -0.8rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+
+}
+.server-item.server-item:hover::before {
+    position: relative;
+    
 }
 
 .server-item .server-img {
